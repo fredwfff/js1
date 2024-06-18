@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Function Test</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        function count(numbers, value) {
+            var count = 0;
+            for (var i = 0; i < numbers.length; i++) {
+                if (numbers[i] < value) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        function testCount() {
+            var numbers = [3, 55, 30, 28, 9, 12];
+            var value = 10;
+            var resultCount = count(numbers, value);
+            document.getElementById("result").innerHTML = "Count of numbers less than " + value + " is: " + resultCount;
+        }
+
+        testCount();
+    </script>
+</body>
+</html>

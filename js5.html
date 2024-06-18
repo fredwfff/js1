@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times Tables</title>
+</head>
+<body>
+    <script>
+        function displayTimesTable(number) {
+            var result = "";
+            for (var i = 1; i <= 12; i++) {
+                result += number + " x " + i + " = " + (number * i) + "<br>";
+            }
+            document.body.innerHTML += result + "<br>";
+        }
+
+        displayTimesTable(3);
+        document.body.innerHTML += "<hr>";
+        displayTimesTable(7);
+        document.body.innerHTML += "<hr>";
+        displayTimesTable(11);
+    </script>
+</body>
+</html>

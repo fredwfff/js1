@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+</head>
+<body>
+    <script>
+        var firstName = prompt("Enter your first name:");
+        var lastName = prompt("Enter your last name:");
+        alert("Your name is " + firstName + " " + lastName);
+
+        var numChildren = prompt("How many children do you have?");
+        numChildren = parseInt(numChildren);
+
+        var message;
+        if (isNaN(numChildren)) {
+            message = "You have entered an invalid number.";
+        } else if (numChildren === 0) {
+            message = "You have no children.";
+        } else if (numChildren === 1) {
+            message = "You have 1 child.";
+        } else {
+            message = "You have " + numChildren + " children.";
+        }
+
+        document.body.innerHTML = "<p>" + message + "</p>";
+    </script>
+</body>
+</html>

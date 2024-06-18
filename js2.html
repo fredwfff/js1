@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+</head>
+<body>
+    <script>
+        var fahrenheit = prompt("Enter the temperature in Fahrenheit:");
+        var celsius = (fahrenheit - 32) * 5 / 9;
+        alert("The temperature in Celsius is " + celsius.toFixed(2) + "°C");
+
+        var celsius = prompt("Enter the temperature in Celsius:");
+        var fahrenheit = (celsius * 9 / 5) + 32;
+        alert("The temperature in Fahrenheit is " + fahrenheit.toFixed(2) + "°F");
+    </script>
+</body>
+</html>

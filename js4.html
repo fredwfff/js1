@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd Numbers and Sum</title>
+</head>
+<body>
+    <script>
+        var start = parseInt(prompt("Enter the starting number of the range:"));
+        var end = parseInt(prompt("Enter the ending number of the range:"));
+        var sum = 0;
+        var odds = "";
+
+        for (var i = start; i <= end; i++) {
+            sum += i;
+            if (i % 2 !== 0) {
+                odds += i + " ";
+            }
+        }
+
+        document.body.innerHTML = "<p>Odd numbers in the range: " + odds.trim() + "</p><p>Sum of all numbers in the range: " + sum + "</p>";
+    </script>
+</body>
+</html>
